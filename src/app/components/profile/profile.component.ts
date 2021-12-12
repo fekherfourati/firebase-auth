@@ -18,7 +18,7 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit(): void {
     this.currentUser = localStorage.getItem('currentUser') ? JSON.parse(''+localStorage.getItem('currentUser')) : ''
-    let creds = collection(this.firestore, 'user_credentials');
+    let creds = collection(this.firestore, 'users_credentials');
     collectionData(creds).subscribe((data)=>{
       this.credentials=data
       this.credentials.map((item:any)=>{
