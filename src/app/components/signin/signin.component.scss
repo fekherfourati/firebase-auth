@@ -245,3 +245,14 @@ button.ghost {
 	letter-spacing: 15px;
 	align-items: center;
 }
+
+@media screen and (max-width:768px) and (min-width:450px){
+    .sign-in-container{
+        width: calc(100% - 50px);
+    }
+}
+@media screen and (max-width:449px){
+    .sign-in-container{
+        width:100%;
+    }
+}
